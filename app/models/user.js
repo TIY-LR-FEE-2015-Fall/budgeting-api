@@ -5,6 +5,8 @@ var Schema = mongoose.Schema;
 var UserSchema = new Schema({
   email: {type: String, required: true, unique: true},
   password: {type: String, required: true},
+
+  // Define hasMany relationship to a Book
   books: [{type: Schema.Types.ObjectId, ref: 'Book'}],
 });
 
