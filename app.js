@@ -1,6 +1,8 @@
 var express = require('express');
+var cors = require('cors');
 
 var app = express();
+app.use(cors());
 
 // Parse input and request data
 require('./bootstrap/middleware')(app);
