@@ -7,6 +7,7 @@ module.exports = {
     Client: models.oauth.clients,
   },
   Book: models.book,
+  Budget: models.budget,
   NewsArticle: models['news-article'],
   User: models.user,
 };
